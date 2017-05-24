@@ -1,0 +1,29 @@
+%pseudo-position{
+  padding: 16px 16px;
+  margin: 8px auto;
+}
+.pseudo-title{
+  background-color: $pseudo-title-color;
+  color: set-notification-text-color($pseudo-title-color);
+  @extend %pseudo-position;
+}
+.pseudo-textbox{
+  background-color:$pseudo-textbox-color;
+  color: set-notification-text-color($pseudo-textbox-color);
+   @extend %pseudo-position;
+}
+.pseudo-image {
+  background-color:$pseudo-image-color;
+  color: set-notification-text-color($pseudo-image-color);
+   @extend %pseudo-position;
+}
+.pseudo-unorder{
+    background-color:$pseudo-ul-color;
+    color: set-notification-text-color($pseudo-ul-color);
+    @extend %pseudo-position;
+}
+.pseudo-order{
+    background-color:$pseudo-ol-color;
+    color: set-notification-text-color($pseudo-ol-color);
+    @extend %pseudo-position;
+}

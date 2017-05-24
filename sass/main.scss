@@ -1,0 +1,37 @@
+@import "partials/color";
+@import "partials/button";
+@import "partials/pseudo-position";
+
+body{
+  font-family:'Ubuntu', sans-serif;
+}
+
+@function set-notification-text-color($color) { //name of function, what variable it grabs, $color = placeholder name
+  @if (lightness($color) > 50) {
+    @return #000000; // If background color is light, return dark to $color
+  } @else {
+    @return #ffffff; // Else, return light color to $color
+  }
+}
+
+.TopColor{
+ font-family: "Source Sans Pro", sans-serif;
+ color: $TopColor;
+ font-size: 20px;
+ 
+}
+
+@media only screen and (max-width: 500px) {
+    .pesudo-title {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .notification {
+        font-size:10px;
+        padding: 16px 16px;
+        width: 20%;
+        display: inline;
+    }
+}
